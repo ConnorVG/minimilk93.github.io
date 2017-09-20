@@ -12,6 +12,7 @@ elixir(function(mix) {
 
     mix.sass('main.scss')
         .exec(bin.path() + ' build ' + env, ['./source/*', './source/**/*', '!./source/_assets/**/*'])
+        .copy('source/_assets/images', 'source/images')
         .browserSync({
             port: port,
             server: { baseDir: 'build_' + env },

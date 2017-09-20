@@ -1,0 +1,15 @@
+a {
+	text-decoration: none;
+}
+
+.link {
+
+	&__twitter {
+		@include link-effect($twitter-blue);
+	}
+
+	&__github {
+		@include link-effect($github-blue);
+	}
+
+}
