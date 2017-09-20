@@ -12,5 +12,8 @@
   "description": "Personal website.",
   "main": "index.js",
   "author": "Shelby Stanton",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  }
 }
