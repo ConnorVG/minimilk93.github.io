@@ -1,0 +1,42 @@
+.hero {
+	background: url('../images/bg.jpg');
+	background-size: cover;
+	height: 100vh;
+	background-position: bottom;
+
+	@include media-breakpoint-up(lg) {
+		height: 100vh;
+		background-position: center;
+	}
+
+	&__container {
+		height: 100%;
+	}
+
+	&__content {
+		@include make-row();
+		align-items: center;
+		height: 100%;
+	}
+
+	&__text {
+		@include make-col-ready();
+		text-align: center;
+
+		@include media-breakpoint-up(md) {
+			text-align: left;
+		}
+	}
+
+	&__intro {
+		font-size: 1.2rem;
+	}
+
+	&__header {
+		font-weight: bold;
+	}
+
+	&__links {
+		margin-top: $grid-gutter-width*2;
+	}
+}
