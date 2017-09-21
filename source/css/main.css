@@ -7922,16 +7922,37 @@ a.text-dark:focus, a.text-dark:hover {
 
 .header__contact {
   color: #000;
+  position: relative;
+  padding-right: 30px;
+}
+
+.header__contact:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.header__contact:after {
+  content: '';
+  background: url("../images/arrow-right.svg");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  background-repeat: no-repeat;
+  margin-top: 3px;
 }
 
 .hero {
   background: url("../images/bg.jpg");
   background-size: cover;
+  height: 100vh;
+  background-position: bottom;
 }
 
 @media (min-width: 992px) {
   .hero {
     height: 100vh;
+    background-position: center;
   }
 }
 
@@ -7956,6 +7977,13 @@ a.text-dark:focus, a.text-dark:hover {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero__text {
+    text-align: left;
+  }
 }
 
 .hero__intro {

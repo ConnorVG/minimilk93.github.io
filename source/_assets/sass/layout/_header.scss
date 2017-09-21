@@ -27,5 +27,23 @@
 
 	&__contact {
 		color: $black;
+		position: relative;
+		padding-right: $grid-gutter-width;
+
+		&:hover {
+			text-decoration: none;
+			color: $black;
+		}
+
+		&:after {
+			content: '';
+			background: url('../images/arrow-right.svg');
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			right: 0;
+			background-repeat: no-repeat;
+			margin-top: 3px;
+		}
 	}
 }

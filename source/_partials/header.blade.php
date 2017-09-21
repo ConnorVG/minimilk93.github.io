@@ -5,7 +5,7 @@
 				<img class="header__icon" src="images/coffee.svg" alt="Coffee"/>
 			</div>
 			<div class="header__right">
-				{{-- <a class="header__contact" href="#">Chat to me</a> --}}
+				<a class="header__contact" href="mailto:hello@shelby.codes">Contact me</a>
 			</div>
 		</div>
 	</div>

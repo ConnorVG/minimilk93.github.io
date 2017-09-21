@@ -1,7 +1,5 @@
 @extends('_layouts.master')
-
 @section('body')
-
 	<section class="hero">
 		<div class="hero__container container">
 			<div class="hero__content">
@@ -14,5 +12,4 @@
 			</div>
 		</div>
 	</section>
-
 @endsection
